@@ -1,0 +1,124 @@
+<html>
+<head>
+<script type="text/javascript"></script></head>
+<style>
+body{
+background-image:url("banner2.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-color:#000000;
+background-attachment:scroll;
+background-size:100% 100%;
+}
+textarea::placeholder{
+font-size:16;
+}
+input[type=submit]{
+width:50%;
+padding:15px 15px 15px 15px;
+margin:7px 0px 0px 100px;
+background-color:#4caf50;
+color:white;
+border:none;
+border-radius:9px
+}
+.full-page
+{
+height: 100%;
+width: 100%;
+background-position: center;
+background-size: 100% 100%;
+}
+.navbar
+{
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 55px;
+padding-right: 35px;
+padding-top: 60px;
+}
+
+nav
+{
+flex: 1;
+text-align: center;
+}
+
+
+ nav ul
+{
+display: inline-block;
+list-style: none;
+}
+
+
+nav ul li
+ 
+{
+display: inline-block;
+margin-right: 70px;
+}
+
+
+nav ul li a
+{
+text-decoration: none;
+font-size: 27px;
+color:white;
+font-family: sans-serif;
+}
+
+
+nav ul li button 
+{
+font-size: 27px;
+color: white;
+outline: none;
+border: none;
+background: transparent;
+cursor: pointer;
+font-family: sans-serif;
+}
+ 
+
+nav ul li button:hover
+{
+color:indianred;
+}
+
+
+nav ul li a:hover
+{
+color:indianred;
+}
+</style>
+<body>
+    <div class="full-page">
+        <div class="navbar"> 
+                   
+                       <nav>
+                           <ul id='MenuItems'>
+                                    <li><a href='About_Us.html'>About Us</a></li>
+                                    <li><a href='menu.html'>Menu</a></li>
+                                    <li><a href='login.html'>Log Out</a></li>
+                                     </li>
+                                     </ul> 
+                                     </nav>
+                       </div>
+<form>
+<fieldset style="margin:auto; width:37%; height:80%; background-color:#a8a8a8; border-style:solid;">
+<b><Font size="6">RESERVE A TABLE</font><hr><b>
+<font size="5" /><p>
+name: <input type="text" size="50" placeholder="ENTER YOUR NAME" style="height:40; text-align:center;"/><br/></br>
+number of people: <input type="text" size="10"  id="icon" style="height:40;"/></br></br> phone:  <input type="text" size="20" style="height:40; right:50px; text-align:center;" placeholder="TYPE A MOBILE NUMBER"/></br></br>
+date: <input type="text"  size="30" style="height:40; text-align:center;" placeholder="DAY/MONTH/YEAR" /></br></br>
+hour: <input type="text"  size="10" style ="height:30; text-align:center;" placeholder="00:00" />
+<input type="radio" name="time" checked="checked"/>am
+<input type="radio" name="time"/>pm</br></br>
+<textarea placeholder="  COMMENTS(OPTIONAL)" rows="7" cols="50"></textarea><input type="submit" value="SAVE">
+<p></font>
+</fieldset>
+</form>
+</body>
+</html>

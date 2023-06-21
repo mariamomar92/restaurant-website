@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <style>
+            body{
+                color: white;
+                background-image: url('image.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position:center ;
+                background-attachment:fixed ;
+                background-color: aliceblue;
+            }
+            .container{
+                text-align: center;
+                padding: 30px;
+                transform: translate(-50%,-50%);
+                left: 50%;
+                top: 58%;
+                width: 3000px;
+                position: absolute;
+            }
+            .full-page
+{
+height: 100%;
+width: 100%;
+background-position: center;
+background-size: 100% 100%;
+}
+.navbar
+{
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 55px;
+padding-right: 35px;
+padding-top: 60px;
+}
+
+nav
+{
+flex: 1;
+text-align: center;
+}
+
+
+ nav ul
+{
+display: inline-block;
+list-style: none;
+}
+
+
+nav ul li
+ 
+{
+display: inline-block;
+margin-right: 70px;
+}
+
+
+nav ul li a
+{
+text-decoration: none;
+font-size: 27px;
+color:white;
+font-family: sans-serif;
+}
+
+
+nav ul li button 
+{
+font-size: 27px;
+color: white;
+outline: none;
+border: none;
+background: transparent;
+cursor: pointer;
+font-family: sans-serif;
+}
+ 
+
+nav ul li button:hover
+{
+color:indianred;
+}
+
+
+nav ul li a:hover
+{
+color:indianred;
+}
+        </style>
+        <title > My first html page</title>
+    
+        
+
+    </head>
+            
+
+    <body id="body">
+        <div class="full-page">
+            <div class="navbar"> 
+                       
+                           <nav>
+                               <ul id='MenuItems'>
+                                        <li><a href='About_Us.html'>About Us</a></li>
+                                        <li><a href='reserve.html'>Services</a></li>
+                                        <li><a href='login.html'>Log Out</a></li>
+                                         </li>
+                                         </ul> 
+                                         </nav>
+                           </div>
+        <script type="text/javascript">
+            var color=sessionStorage.getItem('color')
+            document.getElementById("body").style.color=color;
+          </script>    
+        <div class="body">
+        <div class="container">
+            <div class="breakfast">
+                <img src="breakfast.jpg" class="img1"width= "100px" height= "100px" />
+            <h1 id="title"> Breakfast Menu </h1>
+                 
+             <ul>
+                <li> Ham and Bacon ........... $13.5 </li>
+                <li> Sausage and Egg ......... $12.5 </li>
+                <li> Strawbeerry ............. $12.5 </li>
+                <li> pancakes ................ $12.00</li>
+            </ul>
+             </div>
+         
+            <div class= "fastfood">
+             <img src="fastfood.jpg" class="img2" width="100px" height="100px"/>
+            <h1> Fastfood </h1>
+            <ul>
+             <li> Pizza ............ $13.00 </li> 
+             <li> Burger ............ $11.00 </li>
+             <li> Pasta ............. $13.00 </li>
+            </ul>
+            </div>  
+
+            <div class="Drinks">
+            <img src=" drinks.jpg" class="img3"width="100px" height="100px"/>
+            <h1> Drinks</h1>
+            <ul> 
+             <li> Pop Cola .......... $5.00 </li>
+             <li> Mango Juice ....... $7.00 </li>
+             <li> Smoothies ......... $10.00 </li>
+            </ul>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+    

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+        
+<style>
+
+
+body{
+  /*background-image: url('bckground.jpeg');*/
+  background-repeat: no-repeat;
+       background-size: cover;
+       background-position:center ;
+       background-attachment:fixed ;
+       background-color: aliceblue;
+  }
+
+.full-page
+{
+height: 100%;
+width: 100%;
+background-position: center;
+background-size: 100% 100%;
+}
+.navbar
+{
+display: flex;
+align-items: center;
+padding: 20px;
+padding-left: 55px;
+padding-right: 35px;
+padding-top: 60px;
+}
+
+nav
+{
+flex: 1;
+text-align: center;
+}
+
+
+ nav ul
+{
+display: inline-block;
+list-style: none;
+}
+
+
+nav ul li
+ 
+{
+display: inline-block;
+margin-right: 70px;
+}
+
+
+nav ul li a
+{
+text-decoration: none;
+font-size: 27px;
+color:white;
+font-family: sans-serif;
+}
+
+
+nav ul li button 
+{
+font-size: 27px;
+color: white;
+outline: none;
+border: none;
+background: transparent;
+cursor: pointer;
+font-family: sans-serif;
+}
+ 
+
+nav ul li button:hover
+{
+color:indianred;
+}
+
+
+nav ul li a:hover
+{
+color:indianred;
+}
+ 
+
+a
+{
+text-decoration: none;
+color: palevioletred;
+font-size: 28px;
+}
+
+#login-form
+{
+display: block;
+}
+
+.form-box
+{
+width:380px;
+height:440px;
+position:relative;
+margin:2% auto;
+background:rgba(0, 0, 0, 0.582);
+padding:10px;
+overflow: hidden;
+}
+
+
+.button-box
+{
+width:220px;
+margin:35px auto;
+position:relative;
+box-shadow: 0 0 20px 9px #ff61241f;
+border-radius:30px
+}
+
+.toggle-btn
+{
+padding:10px 30px;
+cursor:pointer;
+background:none;
+border:0;
+outline: none;
+position: relative;
+}
+
+
+#btn
+{
+top:0;
+left:0;
+position:absolute;
+width:110px;
+height:100%;
+background: #f3c693;
+border-radius: 30px;
+transition: .5s;
+}
+
+
+.input-group-login
+{
+top:150px;
+position:absolute;
+width:280px;
+transition: .5s;
+}
+
+.input-group-register
+{
+top:120px;
+position:absolute;
+width:280px;
+transition: .5s;
+}
+
+.input-field
+{
+width:100%;
+padding:10px 0;
+margin:5px 0;
+border-left:0;
+border-top:0;
+border-right:0;
+border-bottom:1px solid rgb(78, 76, 76);
+outline:none;
+background:rgb(255,255,255);
+}
+
+.submit-btn
+{
+width:85%;
+padding:10px 30x;
+cursor:pointer;
+display:block;
+margin:auto;
+background:#f3c963;
+border:0;
+outline:none;
+border-radius:30px;
+}
+
+
+.check-box
+{
+margin: 30px 10px 34px 4px;
+}
+
+
+span
+{
+color: rgba(233, 156, 188, 0.87);
+font-size:17px;
+bottom:49px;
+position:absolute;
+}
+
+#login
+{
+left:50px;
+}
+
+#login input
+{
+color:rgb(5, 5, 5);
+font-size: 15;
+}
+
+#register
+{
+left:450px;
+}
+
+#register input
+{
+color:rgb(5, 5, 5);
+font-size: 15;
+}
+#slider{
+overflow:hidden;
+}
+#slider figure{
+position:fixed;
+width:500%;
+margin:0;
+left:0;
+animation:15s slider infinite;
+
+}
+#slider figure img{
+width:20%;
+float:left;
+}
+@keyframes slider{
+    0% {
+       left:0%;
+       }
+    30%{
+       left:-100%;
+       }
+    60%{
+       left:-200%; 
+       }
+    100%{
+       left:-300%;
+       }  
+}
+
+</style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <br>
+  <div id="slider">
+    <figure>
+      <img src="image1.jpg">
+      <img src="image2.jpg">
+      <img src="image3.jpg">
+      <img src="image1.jpg">
+    </figure>
+ </div>
+</br>
+  <div class="body">
+         <div class="full-page">
+               <div class="navbar"> 
+                          
+                              <nav>
+                                  <ul id='MenuItems'>
+                                           <li><a href='menu.html'>Menu</a></li>
+                                           <li><a href='About_Us.html'>About Us</a></li>
+                                           <li><a href='reserve.html'>Services</a></li>
+                                            </li>
+                                            </ul> 
+                                            </nav>
+                              </div>
+ 
+<div id='login-form'class='login-page'>
+  <div class="form-box">
+    <div class='button-box'>
+      <div id='btn'></div>
+      <button type='button'onclick='login()'class='toggle-btn'>&nbsp;&nbsp;&nbsp;login</button>
+      <button type='button'onclick='register()'class='toggle-btn'>&nbsp;&nbsp;&nbsp;register</button>
+ </div>
+
+ 
+<form id='login' class='input-group-login'>
+<input id='username'type='text'class='input-field'placeholder='email id'required>
+<input id='password'type='password'class='input-field'placeholder='enter password'required> </br>
+<input type='checkbox'class='check-box'> 
+<span>remember password</span>
+<input type="button" class="submit-btn" onclick="admin_check()" value="login"/>
+</form>
+   
+
+
+
+<form id='register' class='input-group-register'>
+<input type='text'class='input-field'placeholder='first name'required>
+<input type='text'class='input-field'placeholder='last name'required>
+<input type='text'class='input-field'placeholder='email id'required>
+<input type='password'class='input-field'placeholder='enter password'required>
+<input type='password'class='input-field'placeholder='confirm password'required> </br>
+<input type='checkbox'class='check-box'>
+<span>i agree to the terms and conditions</span>
+<button type='submit'class='submit-btn'>register</button>
+</form>
+    
+
+                               </div>
+                       </div>
+              </div>
+
+ <script>
+var x=document.getElementById('login');
+var y=document.getElementById('register');
+var z=document.getElementById('btn');
+
+
+function register()
+{
+x.style.left='-400px';
+y.style.left='50px';
+z.style.left='110px';
+}
+
+function login()
+{
+x.style.left='50px';
+y.style.left='450px';
+z.style.left='0px';
+}
+function admin_check(){
+  var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if (username=="admin" && password=="admin"){
+        window.location.href = 'admin.html';
+    }else if(username=="user" && password=="password"){
+        window.location.href = 'menu.html';
+    }
+    else{
+        alert("login failed");
+        return false;
+    }
+}
+  </script>
+ <script>
+
+var model = document.getElementById('login-form');
+window.onclick = function(event)
+{ 
+if (event.target == modal)
+     {
+          modal.style.display = "none";
+     }
+}
+ 
+</script>
+
+ </body>
+<html> 
